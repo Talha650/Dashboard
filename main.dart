@@ -12,11 +12,11 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+  // This widget is the root of application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Fix IT',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
       FlutterToast(context).showToast(
           child: Text(
         'Login Successful',
-        style: TextStyle(fontSize: 25, color: Colors.green),
+        style: TextStyle(fontSize: 22, color: Colors.yellow),
       ));
       Navigator.push(context, MaterialPageRoute(builder: (context)=>DashBoard(),),);
     } else {
@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   'Login',
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 ),
               ),
               Padding(
